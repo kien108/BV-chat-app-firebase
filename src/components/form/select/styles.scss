@@ -1,0 +1,52 @@
+@import "antd/dist/antd.css";
+@import "../../../assets/scss/variables.module.scss";
+
+@mixin styleItemSelect {
+   display: flex;
+   //  color: $secondaryText;
+   color: red;
+
+   p {
+      height: 24px;
+      border-radius: 8px;
+      padding: 0px 8px;
+   }
+}
+
+.dropdown-style {
+   .ant-select-item.ant-select-item-option {
+      height: 46px;
+   }
+
+   .ant-select-item-option-content {
+      display: flex;
+      align-items: center;
+      p {
+         margin-bottom: 0px;
+      }
+   }
+
+   .status-waiting > .ant-select-item-option-content {
+      @include styleItemSelect;
+      p {
+         //  background-color: $strongBlue;
+         background-color: blue;
+      }
+   }
+
+   .status-app > .ant-select-item-option-content {
+      @include styleItemSelect;
+      p {
+         //  background-color: $green;
+         background-color: green;
+      }
+   }
+
+   .status-default > .ant-select-item-option-content {
+      @include styleItemSelect;
+      p {
+         //  background-color: $strongGray;
+         background-color: gray;
+      }
+   }
+}

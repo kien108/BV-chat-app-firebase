@@ -1,0 +1,52 @@
+:root {
+   --primary: #634bff;
+   --black: #151419;
+   --purple: #753ca7;
+
+   --text-primary: #fff;
+   --text-secondary: #65646f;
+   --text-third: #a6a6a8;
+
+   --nav-footer: #1e1c27;
+
+   --bg-page-content: #1a1c20;
+
+   --bg-group: #22262f;
+   --bg-group-content: #191c24;
+
+   --bg-calendar-primary: #23242a;
+   --bg-calendar-secondary: #1d1f24;
+
+   // typo
+   --font: "Raleway", sans-serif;
+}
+
+.dark {
+   --text-primary: #000;
+   --text-third: #434345;
+
+   --bg-group: #221957;
+
+   --bg-group-content: #f5f5f5;
+}
+
+:export {
+   primary: var(--primary);
+   black: var(--black);
+   navFooter: var(--nav-footer);
+   purple: var(--purple);
+
+   bgPageContent: var(--bg-page-content);
+
+   bgGroup: var(--bg-group);
+   bgGroupContent: var(--bg-group-content);
+
+   bgCalendarPrimary: var(--bg-calendar-primary);
+   bgCalendarSecondary: var(--bg-calendar-secondary);
+
+   txtPrimary: var(--text-primary);
+   txtSecondary: var(--text-secondary);
+   txtThird: var(--text-third);
+
+   font: var(--font);
+}

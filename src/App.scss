@@ -1,0 +1,6 @@
+@import "./assets/styles/variables/variables.module.scss";
+
+.App {
+   // color: $temp;
+   color: var(--temp);
+}
